@@ -26,7 +26,7 @@ If you can't point at both arrows in the code, the design is wrong.
 | # | Name | Status | Neural → Symbolic | Symbolic → Neural |
 |---|------|--------|-------------------|-------------------|
 | **A** | [Neural-guided proof search](#prototype-a--neural-guided-proof-search) | ✅ Complete | Policy log-probs order the search heap | Kernel provides legal moves; certification is the only reward |
-| **B** | [Hybrid symbolic regression](#prototype-b--hybrid-symbolic-regression) | 🔧 In progress | Transformer proposes expression skeletons | CAS equivalence-collapses candidates; Pareto front is the training signal |
+| **B** | [Hybrid symbolic regression](#prototype-b--hybrid-symbolic-regression) | ✅ Complete | Grammar-masked transformer proposes expression skeletons | Pareto front over (MSE, complexity) is the training signal |
 | **C** | [Conjecture generation + verification](#prototype-c--conjecture-generation--verification) | 📋 Planned | LSTM proposes integer-sequence identities | Exact-arithmetic verifier is the sole reward oracle |
 
 ---
@@ -157,15 +157,28 @@ python -m pytest tests/ -v   # 45 tests
 
 ## Prototype B — Hybrid Symbolic Regression
 
-**Directory:** `prototype_b_symbolic_regression/` *(in progress)*
+**Directory:** `prototype_b_symbolic_regression/`
 
 Discover closed-form mathematical expressions from noisy data.
 
 **Interlock:**
-- Neural → Symbolic: a small autoregressive transformer proposes expression token sequences
-- Symbolic → Neural: a from-scratch simplification engine collapses equivalent candidates (shrinking the search space), and a Pareto front over `(MSE, symbolic complexity)` is the training signal — not raw fit alone
+- Neural → Symbolic: a small autoregressive transformer proposes expression token sequences; a grammar mask (symbolic constraint) forces every generated sequence to be a syntactically valid expression
+- Symbolic → Neural: a from-scratch simplifier collapses redundant candidates; a Pareto front over `(MSE, symbolic complexity)` is the training signal — not raw fit alone
 
-**Falsification target:** exact recovery (verified by SymPy equivalence) of 6 known physics/math identities from 200 noisy samples (σ = 0.05). Win = ≥4/6 exact recoveries. MLP baseline fits numerically but produces no closed form.
+**Headline results (6 targets, 25 iterations, 60 candidates/iter):**
+
+| Target | f(x) | Recovered | Best MSE |
+|--------|------|-----------|----------|
+| square | x² | ✅ | 0.0026 |
+| inv_x | 1/x | ✅ | 0.0026 |
+| x_plus_inv | x + 1/x | ✗ | 0.037 |
+| square_plus_one | x² + 1 | ✗ | 0.074 |
+| x_minus_inv (OOD) | x − 1/x | ✗ | 1.15 |
+| sqrt_x (OOD) | √x | ✅ | 0.0026 |
+
+**3/6 recovered. Falsification target (≥4/6) not met.** Honest diagnosis: the interlock mechanism is mechanically correct (38/38 tests), but gradient signal reaches only the output projection — attention heads never learn expression structure. Full transformer backprop (JAX/PyTorch) is the fix. See `prototype_b_symbolic_regression/README.md`.
+
+**38/38 tests pass. Full demo runs in ~2 min on CPU. No PyTorch — NumPy + SciPy + SymPy only.**
 
 ---
 
