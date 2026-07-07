@@ -1,0 +1,98 @@
+[
+  {
+    "iteration": 1,
+    "proof_rate": 0.9,
+    "mean_nodes": 12.9,
+    "n_examples": 110,
+    "mean_loss": 1.0446,
+    "elapsed_s": 1.7
+  },
+  {
+    "iteration": 2,
+    "proof_rate": 0.867,
+    "mean_nodes": 10.7,
+    "n_examples": 104,
+    "mean_loss": 1.0003,
+    "elapsed_s": 2.0
+  },
+  {
+    "iteration": 3,
+    "proof_rate": 0.817,
+    "mean_nodes": 9.9,
+    "n_examples": 102,
+    "mean_loss": 0.9783,
+    "elapsed_s": 2.9
+  },
+  {
+    "iteration": 4,
+    "proof_rate": 0.867,
+    "mean_nodes": 17.1,
+    "n_examples": 122,
+    "mean_loss": 1.1076,
+    "elapsed_s": 1.8
+  },
+  {
+    "iteration": 5,
+    "proof_rate": 0.867,
+    "mean_nodes": 6.0,
+    "n_examples": 87,
+    "mean_loss": 1.0089,
+    "elapsed_s": 1.6
+  },
+  {
+    "iteration": 6,
+    "proof_rate": 0.967,
+    "mean_nodes": 11.7,
+    "n_examples": 117,
+    "mean_loss": 1.1579,
+    "elapsed_s": 0.7
+  },
+  {
+    "iteration": 7,
+    "proof_rate": 0.983,
+    "mean_nodes": 15.8,
+    "n_examples": 124,
+    "mean_loss": 1.3027,
+    "elapsed_s": 0.6
+  },
+  {
+    "iteration": 8,
+    "proof_rate": 0.983,
+    "mean_nodes": 8.8,
+    "n_examples": 106,
+    "mean_loss": 1.1313,
+    "elapsed_s": 0.4
+  },
+  {
+    "iteration": 9,
+    "proof_rate": 1.0,
+    "mean_nodes": 17.6,
+    "n_examples": 127,
+    "mean_loss": 1.2788,
+    "elapsed_s": 0.5
+  },
+  {
+    "iteration": 10,
+    "proof_rate": 0.983,
+    "mean_nodes": 7.6,
+    "n_examples": 106,
+    "mean_loss": 1.0468,
+    "elapsed_s": 0.4
+  },
+  {
+    "iteration": 11,
+    "proof_rate": 0.983,
+    "mean_nodes": 16.3,
+    "n_examples": 129,
+    "mean_loss": 1.1864,
+    "elapsed_s": 0.6
+  },
+  {
+    "iteration": 12,
+    "proof_rate": 0.983,
+    "mean_nodes": 11.6,
+    "n_examples": 97,
+    "mean_loss": 1.0553,
+    "elapsed_s": 0.5
+  }
+]

@@ -1,0 +1,5 @@
+numpy>=1.24
+pytest>=7.0
+# Prototype A uses only numpy (no torch required)
+# Prototype B (planned) will add: sympy>=1.12
+# Prototype C (planned) will add: nothing extra
