@@ -1,0 +1,114 @@
+{
+  "recovery": [
+    {
+      "target": "square",
+      "description": "f(x) = x\u00b2",
+      "ground_truth": "pow2 x",
+      "recovered": true,
+      "best_mse": 0.002576346480104334,
+      "best_expr": "((-x)**2)",
+      "ood": false
+    },
+    {
+      "target": "inv_x",
+      "description": "f(x) = 1/x",
+      "ground_truth": "inv x",
+      "recovered": true,
+      "best_mse": 0.002571478689952058,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "ood": false
+    },
+    {
+      "target": "x_plus_inv",
+      "description": "f(x) = x + 1/x",
+      "ground_truth": "add x inv x",
+      "recovered": false,
+      "best_mse": 0.03713389652570421,
+      "best_expr": "((1/sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(x)))))))))))/(C**2))",
+      "ood": false
+    },
+    {
+      "target": "square_plus_one",
+      "description": "f(x) = x\u00b2 + 1",
+      "ground_truth": "add pow2 x 1",
+      "recovered": false,
+      "best_mse": 0.07436069465297385,
+      "best_expr": "(x/(2-(C**2)))",
+      "ood": false
+    },
+    {
+      "target": "x_minus_inv",
+      "description": "f(x) = x - 1/x",
+      "ground_truth": "sub x inv x",
+      "recovered": false,
+      "best_mse": 1.1493841192105692,
+      "best_expr": "((1/x)/C)",
+      "ood": true
+    },
+    {
+      "target": "sqrt_x",
+      "description": "f(x) = \u221ax",
+      "ground_truth": "sqrt x",
+      "recovered": true,
+      "best_mse": 0.0025656295621803286,
+      "best_expr": "(sqrt(x)*C)",
+      "ood": true
+    }
+  ],
+  "ablation": [
+    {
+      "target": "square",
+      "description": "f(x) = x\u00b2",
+      "ground_truth": "pow2 x",
+      "recovered": true,
+      "best_mse": 0.0025337207902491445,
+      "best_expr": "(sqrt(exp(C))*(((0/-1)-x)**2))",
+      "ood": false
+    },
+    {
+      "target": "inv_x",
+      "description": "f(x) = 1/x",
+      "ground_truth": "inv x",
+      "recovered": true,
+      "best_mse": 0.0025714786899411262,
+      "best_expr": "((C/1)*(1/x))",
+      "ood": false
+    },
+    {
+      "target": "x_plus_inv",
+      "description": "f(x) = x + 1/x",
+      "ground_truth": "add x inv x",
+      "recovered": false,
+      "best_mse": 0.18690407153719274,
+      "best_expr": "sqrt((((-1/((0-x)**2))+-1)+C))",
+      "ood": false
+    },
+    {
+      "target": "square_plus_one",
+      "description": "f(x) = x\u00b2 + 1",
+      "ground_truth": "add pow2 x 1",
+      "recovered": true,
+      "best_mse": 0.00253372078395688,
+      "best_expr": "(exp(0)-((x**2)/((-2)*sin((C**2)))))",
+      "ood": false
+    },
+    {
+      "target": "x_minus_inv",
+      "description": "f(x) = x - 1/x",
+      "ground_truth": "sub x inv x",
+      "recovered": false,
+      "best_mse": 0.021094836268555704,
+      "best_expr": "(sqrt(sqrt(sqrt((-((-((-C)/x))-2)))))*x)",
+      "ood": true
+    },
+    {
+      "target": "sqrt_x",
+      "description": "f(x) = \u221ax",
+      "ground_truth": "sqrt x",
+      "recovered": true,
+      "best_mse": 0.0004466073356172433,
+      "best_expr": "sqrt(((1/C)-((exp(1)-(--1))*(sin((1/x))/2))))",
+      "ood": true
+    }
+  ]
+}

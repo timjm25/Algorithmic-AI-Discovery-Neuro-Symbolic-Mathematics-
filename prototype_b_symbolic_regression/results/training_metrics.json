@@ -1,0 +1,1514 @@
+{
+  "square": [
+    {
+      "iteration": 1,
+      "pool_size": 20,
+      "n_added": 20,
+      "pareto_front": 1,
+      "best_mse": 0.517727,
+      "best_expr": "x",
+      "loss": 2.898,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 2,
+      "pool_size": 33,
+      "n_added": 13,
+      "pareto_front": 2,
+      "best_mse": 0.00352,
+      "best_expr": "((x/1)*((-((exp(2)/C)/-1))+x))",
+      "loss": 2.882,
+      "elapsed_s": 0.24
+    },
+    {
+      "iteration": 3,
+      "pool_size": 50,
+      "n_added": 17,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 2.822,
+      "elapsed_s": 0.28
+    },
+    {
+      "iteration": 4,
+      "pool_size": 73,
+      "n_added": 23,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 2.7437,
+      "elapsed_s": 0.29
+    },
+    {
+      "iteration": 5,
+      "pool_size": 88,
+      "n_added": 15,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 2.6398,
+      "elapsed_s": 0.33
+    },
+    {
+      "iteration": 6,
+      "pool_size": 99,
+      "n_added": 11,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 2.5076,
+      "elapsed_s": 0.32
+    },
+    {
+      "iteration": 7,
+      "pool_size": 113,
+      "n_added": 14,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 2.3459,
+      "elapsed_s": 0.3
+    },
+    {
+      "iteration": 8,
+      "pool_size": 127,
+      "n_added": 14,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 2.1563,
+      "elapsed_s": 0.37
+    },
+    {
+      "iteration": 9,
+      "pool_size": 138,
+      "n_added": 11,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 1.9439,
+      "elapsed_s": 0.24
+    },
+    {
+      "iteration": 10,
+      "pool_size": 157,
+      "n_added": 19,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 1.7175,
+      "elapsed_s": 0.32
+    },
+    {
+      "iteration": 11,
+      "pool_size": 166,
+      "n_added": 9,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 1.4893,
+      "elapsed_s": 0.27
+    },
+    {
+      "iteration": 12,
+      "pool_size": 183,
+      "n_added": 17,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 1.2722,
+      "elapsed_s": 0.28
+    },
+    {
+      "iteration": 13,
+      "pool_size": 194,
+      "n_added": 11,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 1.077,
+      "elapsed_s": 0.25
+    },
+    {
+      "iteration": 14,
+      "pool_size": 199,
+      "n_added": 5,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.9101,
+      "elapsed_s": 0.26
+    },
+    {
+      "iteration": 15,
+      "pool_size": 202,
+      "n_added": 3,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.7734,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 16,
+      "pool_size": 208,
+      "n_added": 6,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.6652,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 17,
+      "pool_size": 212,
+      "n_added": 4,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.5821,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 18,
+      "pool_size": 214,
+      "n_added": 2,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.5195,
+      "elapsed_s": 0.2
+    },
+    {
+      "iteration": 19,
+      "pool_size": 215,
+      "n_added": 1,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.4729,
+      "elapsed_s": 0.2
+    },
+    {
+      "iteration": 20,
+      "pool_size": 218,
+      "n_added": 3,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.4379,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 21,
+      "pool_size": 218,
+      "n_added": 0,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.4112,
+      "elapsed_s": 0.16
+    },
+    {
+      "iteration": 22,
+      "pool_size": 219,
+      "n_added": 1,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.3904,
+      "elapsed_s": 0.16
+    },
+    {
+      "iteration": 23,
+      "pool_size": 219,
+      "n_added": 0,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.3737,
+      "elapsed_s": 0.16
+    },
+    {
+      "iteration": 24,
+      "pool_size": 219,
+      "n_added": 0,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.3598,
+      "elapsed_s": 0.16
+    },
+    {
+      "iteration": 25,
+      "pool_size": 220,
+      "n_added": 1,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "((-x)**2)",
+      "loss": 0.3483,
+      "elapsed_s": 0.16
+    }
+  ],
+  "inv_x": [
+    {
+      "iteration": 1,
+      "pool_size": 8,
+      "n_added": 8,
+      "pareto_front": 2,
+      "best_mse": 1.977406,
+      "best_expr": "((-(C**2))**2)",
+      "loss": 3.208,
+      "elapsed_s": 0.08
+    },
+    {
+      "iteration": 2,
+      "pool_size": 8,
+      "n_added": 0,
+      "pareto_front": 2,
+      "best_mse": 1.977406,
+      "best_expr": "((-(C**2))**2)",
+      "loss": 2.7353,
+      "elapsed_s": 0.09
+    },
+    {
+      "iteration": 3,
+      "pool_size": 13,
+      "n_added": 5,
+      "pareto_front": 2,
+      "best_mse": 1.977406,
+      "best_expr": "((-(C**2))**2)",
+      "loss": 2.7675,
+      "elapsed_s": 0.14
+    },
+    {
+      "iteration": 4,
+      "pool_size": 19,
+      "n_added": 6,
+      "pareto_front": 2,
+      "best_mse": 1.977406,
+      "best_expr": "((-(C**2))**2)",
+      "loss": 2.3285,
+      "elapsed_s": 0.18
+    },
+    {
+      "iteration": 5,
+      "pool_size": 31,
+      "n_added": 12,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "(1/x)",
+      "loss": 2.7793,
+      "elapsed_s": 0.22
+    },
+    {
+      "iteration": 6,
+      "pool_size": 36,
+      "n_added": 5,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "(1/x)",
+      "loss": 2.2901,
+      "elapsed_s": 0.24
+    },
+    {
+      "iteration": 7,
+      "pool_size": 45,
+      "n_added": 9,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "(1/x)",
+      "loss": 1.8976,
+      "elapsed_s": 0.27
+    },
+    {
+      "iteration": 8,
+      "pool_size": 62,
+      "n_added": 17,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "(1/x)",
+      "loss": 1.6159,
+      "elapsed_s": 0.32
+    },
+    {
+      "iteration": 9,
+      "pool_size": 71,
+      "n_added": 9,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "(1/x)",
+      "loss": 1.4188,
+      "elapsed_s": 0.24
+    },
+    {
+      "iteration": 10,
+      "pool_size": 83,
+      "n_added": 12,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "(1/x)",
+      "loss": 1.2748,
+      "elapsed_s": 0.26
+    },
+    {
+      "iteration": 11,
+      "pool_size": 92,
+      "n_added": 9,
+      "pareto_front": 2,
+      "best_mse": 0.002576,
+      "best_expr": "(1/x)",
+      "loss": 1.1607,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 12,
+      "pool_size": 99,
+      "n_added": 7,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.6775,
+      "elapsed_s": 0.22
+    },
+    {
+      "iteration": 13,
+      "pool_size": 112,
+      "n_added": 13,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.5423,
+      "elapsed_s": 0.2
+    },
+    {
+      "iteration": 14,
+      "pool_size": 119,
+      "n_added": 7,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.4308,
+      "elapsed_s": 0.25
+    },
+    {
+      "iteration": 15,
+      "pool_size": 126,
+      "n_added": 7,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.3484,
+      "elapsed_s": 0.22
+    },
+    {
+      "iteration": 16,
+      "pool_size": 140,
+      "n_added": 14,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.2898,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 17,
+      "pool_size": 146,
+      "n_added": 6,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.2492,
+      "elapsed_s": 0.25
+    },
+    {
+      "iteration": 18,
+      "pool_size": 155,
+      "n_added": 9,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.2201,
+      "elapsed_s": 0.26
+    },
+    {
+      "iteration": 19,
+      "pool_size": 161,
+      "n_added": 6,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.1947,
+      "elapsed_s": 0.25
+    },
+    {
+      "iteration": 20,
+      "pool_size": 167,
+      "n_added": 6,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.1668,
+      "elapsed_s": 0.27
+    },
+    {
+      "iteration": 21,
+      "pool_size": 172,
+      "n_added": 5,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.1338,
+      "elapsed_s": 0.25
+    },
+    {
+      "iteration": 22,
+      "pool_size": 175,
+      "n_added": 3,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.0977,
+      "elapsed_s": 0.28
+    },
+    {
+      "iteration": 23,
+      "pool_size": 177,
+      "n_added": 2,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.0627,
+      "elapsed_s": 0.26
+    },
+    {
+      "iteration": 24,
+      "pool_size": 181,
+      "n_added": 4,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.0328,
+      "elapsed_s": 0.33
+    },
+    {
+      "iteration": 25,
+      "pool_size": 186,
+      "n_added": 5,
+      "pareto_front": 3,
+      "best_mse": 0.002571,
+      "best_expr": "((1/((1/(1/2))*(C**2)))/(x/((-(1/2))**2)))",
+      "loss": 1.0103,
+      "elapsed_s": 0.34
+    }
+  ],
+  "x_plus_inv": [
+    {
+      "iteration": 1,
+      "pool_size": 16,
+      "n_added": 16,
+      "pareto_front": 3,
+      "best_mse": 0.819916,
+      "best_expr": "(1/sin(x))",
+      "loss": 1.4979,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 2,
+      "pool_size": 26,
+      "n_added": 10,
+      "pareto_front": 3,
+      "best_mse": 0.819916,
+      "best_expr": "(1/sin(x))",
+      "loss": 1.329,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 3,
+      "pool_size": 35,
+      "n_added": 9,
+      "pareto_front": 3,
+      "best_mse": 0.819916,
+      "best_expr": "(1/sin(x))",
+      "loss": 1.1623,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 4,
+      "pool_size": 44,
+      "n_added": 9,
+      "pareto_front": 3,
+      "best_mse": 0.819916,
+      "best_expr": "(1/sin(x))",
+      "loss": 1.0243,
+      "elapsed_s": 0.17
+    },
+    {
+      "iteration": 5,
+      "pool_size": 50,
+      "n_added": 6,
+      "pareto_front": 3,
+      "best_mse": 0.819916,
+      "best_expr": "(1/sin(x))",
+      "loss": 0.9147,
+      "elapsed_s": 0.2
+    },
+    {
+      "iteration": 6,
+      "pool_size": 58,
+      "n_added": 8,
+      "pareto_front": 3,
+      "best_mse": 0.819916,
+      "best_expr": "(1/sin(x))",
+      "loss": 0.8272,
+      "elapsed_s": 0.24
+    },
+    {
+      "iteration": 7,
+      "pool_size": 69,
+      "n_added": 11,
+      "pareto_front": 4,
+      "best_mse": 0.596647,
+      "best_expr": "((1/sin(x))/(C**2))",
+      "loss": 1.0265,
+      "elapsed_s": 0.37
+    },
+    {
+      "iteration": 8,
+      "pool_size": 79,
+      "n_added": 10,
+      "pareto_front": 5,
+      "best_mse": 0.514799,
+      "best_expr": "(1/sqrt((sqrt(x)*(C**2))))",
+      "loss": 1.3264,
+      "elapsed_s": 0.32
+    },
+    {
+      "iteration": 9,
+      "pool_size": 91,
+      "n_added": 12,
+      "pareto_front": 5,
+      "best_mse": 0.514799,
+      "best_expr": "(1/sqrt((sqrt(x)*(C**2))))",
+      "loss": 1.168,
+      "elapsed_s": 0.29
+    },
+    {
+      "iteration": 10,
+      "pool_size": 99,
+      "n_added": 8,
+      "pareto_front": 5,
+      "best_mse": 0.514799,
+      "best_expr": "(1/sqrt((sqrt(x)*(C**2))))",
+      "loss": 1.1562,
+      "elapsed_s": 0.27
+    },
+    {
+      "iteration": 11,
+      "pool_size": 107,
+      "n_added": 8,
+      "pareto_front": 5,
+      "best_mse": 0.514799,
+      "best_expr": "(1/sqrt((sqrt(x)*(C**2))))",
+      "loss": 1.0644,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 12,
+      "pool_size": 112,
+      "n_added": 5,
+      "pareto_front": 6,
+      "best_mse": 0.283701,
+      "best_expr": "(x/sqrt(((2-(C**2))+(-(1/sin(x))))))",
+      "loss": 1.2008,
+      "elapsed_s": 0.28
+    },
+    {
+      "iteration": 13,
+      "pool_size": 117,
+      "n_added": 5,
+      "pareto_front": 7,
+      "best_mse": 0.283701,
+      "best_expr": "(x/sqrt(((2-(C**2))+(-(1/sin(x))))))",
+      "loss": 1.1277,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 14,
+      "pool_size": 122,
+      "n_added": 5,
+      "pareto_front": 7,
+      "best_mse": 0.283701,
+      "best_expr": "(x/sqrt(((2-(C**2))+(-(1/sin(x))))))",
+      "loss": 1.0826,
+      "elapsed_s": 0.29
+    },
+    {
+      "iteration": 15,
+      "pool_size": 128,
+      "n_added": 6,
+      "pareto_front": 5,
+      "best_mse": 0.273209,
+      "best_expr": "(1/sin((sqrt(x)*(C**2))))",
+      "loss": 0.8556,
+      "elapsed_s": 0.27
+    },
+    {
+      "iteration": 16,
+      "pool_size": 137,
+      "n_added": 9,
+      "pareto_front": 6,
+      "best_mse": 0.273209,
+      "best_expr": "(1/sin((sqrt(x)*(C**2))))",
+      "loss": 0.8049,
+      "elapsed_s": 0.3
+    },
+    {
+      "iteration": 17,
+      "pool_size": 149,
+      "n_added": 12,
+      "pareto_front": 9,
+      "best_mse": 0.196545,
+      "best_expr": "((1/sin(sin(x)))/sqrt((sqrt(sqrt((1/sin(x))))*(C**2))))",
+      "loss": 0.9019,
+      "elapsed_s": 0.33
+    },
+    {
+      "iteration": 18,
+      "pool_size": 156,
+      "n_added": 7,
+      "pareto_front": 9,
+      "best_mse": 0.196545,
+      "best_expr": "((1/sin(sin(x)))/sqrt((sqrt(sqrt((1/sin(x))))*(C**2))))",
+      "loss": 0.8307,
+      "elapsed_s": 0.28
+    },
+    {
+      "iteration": 19,
+      "pool_size": 169,
+      "n_added": 13,
+      "pareto_front": 8,
+      "best_mse": 0.069972,
+      "best_expr": "(1/sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(x)))))))))))))",
+      "loss": 0.665,
+      "elapsed_s": 0.33
+    },
+    {
+      "iteration": 20,
+      "pool_size": 192,
+      "n_added": 23,
+      "pareto_front": 11,
+      "best_mse": 0.043118,
+      "best_expr": "(1/sin(sin(sin(sin(sin(sin(sin(sin(sin(x))))))))))",
+      "loss": 0.586,
+      "elapsed_s": 0.47
+    },
+    {
+      "iteration": 21,
+      "pool_size": 205,
+      "n_added": 13,
+      "pareto_front": 12,
+      "best_mse": 0.04136,
+      "best_expr": "(1/sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(x)))))))))))",
+      "loss": 0.5316,
+      "elapsed_s": 0.56
+    },
+    {
+      "iteration": 22,
+      "pool_size": 210,
+      "n_added": 5,
+      "pareto_front": 12,
+      "best_mse": 0.04136,
+      "best_expr": "(1/sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(x)))))))))))",
+      "loss": 0.4978,
+      "elapsed_s": 0.42
+    },
+    {
+      "iteration": 23,
+      "pool_size": 212,
+      "n_added": 2,
+      "pareto_front": 12,
+      "best_mse": 0.04136,
+      "best_expr": "(1/sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(x)))))))))))",
+      "loss": 0.4893,
+      "elapsed_s": 0.32
+    },
+    {
+      "iteration": 24,
+      "pool_size": 215,
+      "n_added": 3,
+      "pareto_front": 12,
+      "best_mse": 0.04136,
+      "best_expr": "(1/sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(x)))))))))))",
+      "loss": 0.4918,
+      "elapsed_s": 0.36
+    },
+    {
+      "iteration": 25,
+      "pool_size": 218,
+      "n_added": 3,
+      "pareto_front": 13,
+      "best_mse": 0.037134,
+      "best_expr": "((1/sin(sin(sin(sin(sin(sin(sin(sin(sin(sin(x)))))))))))/(C**2))",
+      "loss": 0.5108,
+      "elapsed_s": 0.44
+    }
+  ],
+  "square_plus_one": [
+    {
+      "iteration": 1,
+      "pool_size": 21,
+      "n_added": 21,
+      "pareto_front": 2,
+      "best_mse": 0.49849,
+      "best_expr": "(1/sin(sin(sin((sqrt(x)*(C**2))))))",
+      "loss": 1.2363,
+      "elapsed_s": 0.3
+    },
+    {
+      "iteration": 2,
+      "pool_size": 27,
+      "n_added": 6,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 1.8137,
+      "elapsed_s": 0.28
+    },
+    {
+      "iteration": 3,
+      "pool_size": 29,
+      "n_added": 2,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 1.4278,
+      "elapsed_s": 0.25
+    },
+    {
+      "iteration": 4,
+      "pool_size": 33,
+      "n_added": 4,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 1.0824,
+      "elapsed_s": 0.22
+    },
+    {
+      "iteration": 5,
+      "pool_size": 37,
+      "n_added": 4,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.8322,
+      "elapsed_s": 0.19
+    },
+    {
+      "iteration": 6,
+      "pool_size": 40,
+      "n_added": 3,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.6774,
+      "elapsed_s": 0.16
+    },
+    {
+      "iteration": 7,
+      "pool_size": 49,
+      "n_added": 9,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.5998,
+      "elapsed_s": 0.18
+    },
+    {
+      "iteration": 8,
+      "pool_size": 56,
+      "n_added": 7,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.574,
+      "elapsed_s": 0.25
+    },
+    {
+      "iteration": 9,
+      "pool_size": 61,
+      "n_added": 5,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.5727,
+      "elapsed_s": 0.15
+    },
+    {
+      "iteration": 10,
+      "pool_size": 65,
+      "n_added": 4,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.5758,
+      "elapsed_s": 0.2
+    },
+    {
+      "iteration": 11,
+      "pool_size": 69,
+      "n_added": 4,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.5738,
+      "elapsed_s": 0.2
+    },
+    {
+      "iteration": 12,
+      "pool_size": 73,
+      "n_added": 4,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.5648,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 13,
+      "pool_size": 79,
+      "n_added": 6,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.5507,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 14,
+      "pool_size": 82,
+      "n_added": 3,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.5346,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 15,
+      "pool_size": 86,
+      "n_added": 4,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.519,
+      "elapsed_s": 0.24
+    },
+    {
+      "iteration": 16,
+      "pool_size": 92,
+      "n_added": 6,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.5056,
+      "elapsed_s": 0.24
+    },
+    {
+      "iteration": 17,
+      "pool_size": 94,
+      "n_added": 2,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4949,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 18,
+      "pool_size": 98,
+      "n_added": 4,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4871,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 19,
+      "pool_size": 100,
+      "n_added": 2,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4818,
+      "elapsed_s": 0.19
+    },
+    {
+      "iteration": 20,
+      "pool_size": 102,
+      "n_added": 2,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4785,
+      "elapsed_s": 0.19
+    },
+    {
+      "iteration": 21,
+      "pool_size": 105,
+      "n_added": 3,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4765,
+      "elapsed_s": 0.2
+    },
+    {
+      "iteration": 22,
+      "pool_size": 106,
+      "n_added": 1,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4753,
+      "elapsed_s": 0.17
+    },
+    {
+      "iteration": 23,
+      "pool_size": 106,
+      "n_added": 0,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4744,
+      "elapsed_s": 0.15
+    },
+    {
+      "iteration": 24,
+      "pool_size": 108,
+      "n_added": 2,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4735,
+      "elapsed_s": 0.19
+    },
+    {
+      "iteration": 25,
+      "pool_size": 110,
+      "n_added": 2,
+      "pareto_front": 2,
+      "best_mse": 0.074361,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 0.4723,
+      "elapsed_s": 0.16
+    }
+  ],
+  "x_minus_inv": [
+    {
+      "iteration": 1,
+      "pool_size": 4,
+      "n_added": 4,
+      "pareto_front": 3,
+      "best_mse": 3.680223,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 1.3052,
+      "elapsed_s": 0.13
+    },
+    {
+      "iteration": 2,
+      "pool_size": 6,
+      "n_added": 2,
+      "pareto_front": 3,
+      "best_mse": 3.680223,
+      "best_expr": "(x/(2-(C**2)))",
+      "loss": 1.1861,
+      "elapsed_s": 0.14
+    },
+    {
+      "iteration": 3,
+      "pool_size": 12,
+      "n_added": 6,
+      "pareto_front": 3,
+      "best_mse": 3.608901,
+      "best_expr": "(x/(2-(2-(C**2))))",
+      "loss": 1.6977,
+      "elapsed_s": 0.16
+    },
+    {
+      "iteration": 4,
+      "pool_size": 16,
+      "n_added": 4,
+      "pareto_front": 3,
+      "best_mse": 3.608901,
+      "best_expr": "(x/(2-(2-(C**2))))",
+      "loss": 1.9964,
+      "elapsed_s": 0.16
+    },
+    {
+      "iteration": 5,
+      "pool_size": 27,
+      "n_added": 11,
+      "pareto_front": 5,
+      "best_mse": 2.738763,
+      "best_expr": "(x/((-x)-(2-(C**2))))",
+      "loss": 1.9003,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 6,
+      "pool_size": 38,
+      "n_added": 11,
+      "pareto_front": 4,
+      "best_mse": 1.560342,
+      "best_expr": "((1/sin(x))/(2-(C**2)))",
+      "loss": 1.6731,
+      "elapsed_s": 0.24
+    },
+    {
+      "iteration": 7,
+      "pool_size": 45,
+      "n_added": 7,
+      "pareto_front": 4,
+      "best_mse": 1.560342,
+      "best_expr": "((1/sin(x))/(2-(C**2)))",
+      "loss": 1.3677,
+      "elapsed_s": 0.25
+    },
+    {
+      "iteration": 8,
+      "pool_size": 52,
+      "n_added": 7,
+      "pareto_front": 4,
+      "best_mse": 1.560342,
+      "best_expr": "((1/sin(x))/(2-(C**2)))",
+      "loss": 1.1251,
+      "elapsed_s": 0.28
+    },
+    {
+      "iteration": 9,
+      "pool_size": 61,
+      "n_added": 9,
+      "pareto_front": 4,
+      "best_mse": 1.560342,
+      "best_expr": "((1/sin(x))/(2-(C**2)))",
+      "loss": 1.3574,
+      "elapsed_s": 0.27
+    },
+    {
+      "iteration": 10,
+      "pool_size": 66,
+      "n_added": 5,
+      "pareto_front": 4,
+      "best_mse": 1.560342,
+      "best_expr": "((1/sin(x))/(2-(C**2)))",
+      "loss": 1.2503,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 11,
+      "pool_size": 68,
+      "n_added": 2,
+      "pareto_front": 4,
+      "best_mse": 1.560342,
+      "best_expr": "((1/sin(x))/(2-(C**2)))",
+      "loss": 1.1641,
+      "elapsed_s": 0.18
+    },
+    {
+      "iteration": 12,
+      "pool_size": 71,
+      "n_added": 3,
+      "pareto_front": 4,
+      "best_mse": 1.560342,
+      "best_expr": "((1/sin(x))/(2-(C**2)))",
+      "loss": 1.1048,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 13,
+      "pool_size": 76,
+      "n_added": 5,
+      "pareto_front": 4,
+      "best_mse": 1.560342,
+      "best_expr": "((1/sin(x))/(2-(C**2)))",
+      "loss": 1.0636,
+      "elapsed_s": 0.22
+    },
+    {
+      "iteration": 14,
+      "pool_size": 82,
+      "n_added": 6,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 1.4914,
+      "elapsed_s": 0.19
+    },
+    {
+      "iteration": 15,
+      "pool_size": 85,
+      "n_added": 3,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 1.3151,
+      "elapsed_s": 0.21
+    },
+    {
+      "iteration": 16,
+      "pool_size": 89,
+      "n_added": 4,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 1.1512,
+      "elapsed_s": 0.23
+    },
+    {
+      "iteration": 17,
+      "pool_size": 93,
+      "n_added": 4,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 1.0309,
+      "elapsed_s": 0.2
+    },
+    {
+      "iteration": 18,
+      "pool_size": 102,
+      "n_added": 9,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 0.9471,
+      "elapsed_s": 0.19
+    },
+    {
+      "iteration": 19,
+      "pool_size": 106,
+      "n_added": 4,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 0.8875,
+      "elapsed_s": 0.18
+    },
+    {
+      "iteration": 20,
+      "pool_size": 109,
+      "n_added": 3,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 0.8429,
+      "elapsed_s": 0.18
+    },
+    {
+      "iteration": 21,
+      "pool_size": 110,
+      "n_added": 1,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 0.8079,
+      "elapsed_s": 0.17
+    },
+    {
+      "iteration": 22,
+      "pool_size": 112,
+      "n_added": 2,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 0.7792,
+      "elapsed_s": 0.15
+    },
+    {
+      "iteration": 23,
+      "pool_size": 113,
+      "n_added": 1,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 0.7549,
+      "elapsed_s": 0.14
+    },
+    {
+      "iteration": 24,
+      "pool_size": 113,
+      "n_added": 0,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 0.7336,
+      "elapsed_s": 0.13
+    },
+    {
+      "iteration": 25,
+      "pool_size": 113,
+      "n_added": 0,
+      "pareto_front": 4,
+      "best_mse": 1.149384,
+      "best_expr": "((1/x)/C)",
+      "loss": 0.7146,
+      "elapsed_s": 0.16
+    }
+  ],
+  "sqrt_x": [
+    {
+      "iteration": 1,
+      "pool_size": 14,
+      "n_added": 14,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 1.2147,
+      "elapsed_s": 0.11
+    },
+    {
+      "iteration": 2,
+      "pool_size": 16,
+      "n_added": 2,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 1.1404,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 3,
+      "pool_size": 17,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 1.0523,
+      "elapsed_s": 0.09
+    },
+    {
+      "iteration": 4,
+      "pool_size": 18,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.9693,
+      "elapsed_s": 0.08
+    },
+    {
+      "iteration": 5,
+      "pool_size": 20,
+      "n_added": 2,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.8978,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 6,
+      "pool_size": 23,
+      "n_added": 3,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.8386,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 7,
+      "pool_size": 28,
+      "n_added": 5,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.7905,
+      "elapsed_s": 0.11
+    },
+    {
+      "iteration": 8,
+      "pool_size": 29,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.7517,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 9,
+      "pool_size": 30,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.7206,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 10,
+      "pool_size": 30,
+      "n_added": 0,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6954,
+      "elapsed_s": 0.09
+    },
+    {
+      "iteration": 11,
+      "pool_size": 32,
+      "n_added": 2,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6746,
+      "elapsed_s": 0.09
+    },
+    {
+      "iteration": 12,
+      "pool_size": 33,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6571,
+      "elapsed_s": 0.11
+    },
+    {
+      "iteration": 13,
+      "pool_size": 34,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6423,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 14,
+      "pool_size": 35,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6302,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 15,
+      "pool_size": 36,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6206,
+      "elapsed_s": 0.12
+    },
+    {
+      "iteration": 16,
+      "pool_size": 37,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6134,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 17,
+      "pool_size": 39,
+      "n_added": 2,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6084,
+      "elapsed_s": 0.11
+    },
+    {
+      "iteration": 18,
+      "pool_size": 39,
+      "n_added": 0,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.605,
+      "elapsed_s": 0.11
+    },
+    {
+      "iteration": 19,
+      "pool_size": 39,
+      "n_added": 0,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6025,
+      "elapsed_s": 0.11
+    },
+    {
+      "iteration": 20,
+      "pool_size": 40,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.6004,
+      "elapsed_s": 0.11
+    },
+    {
+      "iteration": 21,
+      "pool_size": 40,
+      "n_added": 0,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.5983,
+      "elapsed_s": 0.11
+    },
+    {
+      "iteration": 22,
+      "pool_size": 40,
+      "n_added": 0,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.5959,
+      "elapsed_s": 0.12
+    },
+    {
+      "iteration": 23,
+      "pool_size": 41,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.5932,
+      "elapsed_s": 0.1
+    },
+    {
+      "iteration": 24,
+      "pool_size": 41,
+      "n_added": 0,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.5904,
+      "elapsed_s": 0.12
+    },
+    {
+      "iteration": 25,
+      "pool_size": 42,
+      "n_added": 1,
+      "pareto_front": 3,
+      "best_mse": 0.002566,
+      "best_expr": "(sqrt(x)*C)",
+      "loss": 0.5876,
+      "elapsed_s": 0.11
+    }
+  ]
+}
