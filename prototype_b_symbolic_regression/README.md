@@ -22,7 +22,10 @@ the transformer learns to propose expressions that survive symbolic selection.
 ```bash
 cd prototype_b_symbolic_regression
 python demo.py           # full search + ablation, ~2 min on laptop CPU
-python -m pytest tests/ -v   # 38 tests
+python -m pytest tests/ -v   # core + import/CLI tests
+
+# your own (x, y) data (schema: top-level README, "Run on your own data")
+python fit.py --file ../data/templates/regression_template.csv
 ```
 
 No PyTorch. NumPy + SciPy + SymPy only.

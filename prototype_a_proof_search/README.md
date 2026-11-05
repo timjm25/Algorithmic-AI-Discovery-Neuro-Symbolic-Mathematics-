@@ -23,7 +23,11 @@ trains the policy → policy improves.
 ```bash
 cd prototype_a_proof_search
 python demo.py          # full training + ablation (~20 s on a laptop CPU)
-python -m pytest tests/ -v   # 45 unit/adversarial tests
+python -m pytest tests/ -v   # kernel/adversarial + import/CLI tests
+
+# your own identities (schema: top-level README, "Run on your own data")
+python prove.py --file ../data/templates/theorems_template.csv
+python prove.py --statement "a*(b+c) = a*b + a*c"
 ```
 
 No external ML library required — NumPy only.
