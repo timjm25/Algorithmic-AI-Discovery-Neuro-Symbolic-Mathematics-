@@ -132,7 +132,8 @@ QED — 4 kernel-certified steps, 74 nodes expanded.
 ```bash
 cd prototype_a_proof_search
 python demo.py           # ~20 s on a laptop CPU, reproduces all numbers above
-python -m pytest tests/ -v   # 45 tests
+python -m pytest tests/ -v   # 45 core tests + import/CLI tests
+python prove.py --file ../data/templates/theorems_template.csv   # your own identities
 ```
 
 **No PyTorch or external ML library required — NumPy only.**
@@ -148,6 +149,8 @@ python -m pytest tests/ -v   # 45 tests
 | `theorems.py` | Training + OOD theorem generator | ~100 |
 | `train.py` | Expert iteration loop + ablation runner | ~130 |
 | `demo.py` | End-to-end demo, saves results to `results/` | ~120 |
+| `theorem_io.py` | Parse your own statements; exact identity check; CSV/XLSX/JSON/TXT import | ~330 |
+| `prove.py` | CLI: prove imported statements, write JSON/CSV proofs | ~190 |
 | `tests/test_kernel.py` | 34 unit + adversarial tests | ~230 |
 | `tests/test_search.py` | 11 integration + gradient tests | ~110 |
 | `README.md` | This section | — |
@@ -196,16 +199,83 @@ Generate candidate integer-sequence identities and verify them to exact arithmet
 
 ---
 
-## Setup
+## Quick Start
 
 ```bash
 git clone https://github.com/timjm25/Algorithmic-AI-Discovery-Neuro-Symbolic-Mathematics-.git
 cd Algorithmic-AI-Discovery-Neuro-Symbolic-Mathematics-
-pip install numpy pytest          # Prototype A only
-pip install numpy pytest sympy    # Prototype B adds sympy (oracle only)
+python3 -m pip install -r requirements.txt     # numpy, scipy, sympy, pytest
+python3 -m pip install openpyxl                 # optional: only for .xlsx import
+
+python3 -m pytest -q                            # every prototype's tests, from the repo root
 ```
 
 Python ≥ 3.9 required. No GPU needed — all prototypes target a single CPU machine.
+
+### Run on your own data
+
+Templates with a few clearly-marked `SAMPLE` rows live in `data/templates/`.
+Copy one, replace the sample rows, and point the CLI at it.
+
+**Prototype A — prove your own ring identities**
+
+```bash
+cd prototype_a_proof_search
+python3 prove.py --file ../data/templates/theorems_template.csv
+python3 prove.py --statement "(a*1 + 0)*(b + c) = a*b + a*c"
+python3 prove.py --file my_theorems.csv --max-nodes 5000 --out results/my_proofs.json   # or .csv
+python3 prove.py --demo 5          # built-in generated theorems instead of a file
+```
+
+| Column | Required | Meaning |
+|--------|----------|---------|
+| `statement` | yes | `lhs = rhs`, or an expression to prove equal to 0. Variables `a`, `b`, `c`; integers; `+ - *`; `^` (or `**`) with a whole-number exponent ≤ 8; parentheses |
+| `id` | no | unique label (defaults to `T<row>`) |
+| `notes` | no | free text, carried to the output |
+
+Accepted files: `.csv`, `.tsv`, `.xlsx` (first sheet), `.json` (a list of
+statements/objects or `{"theorems": [...]}`), `.txt` (one statement per line,
+`#` comments). Each row is parsed and then **checked exactly** to be a true
+identity of ℤ[a, b, c] (evaluation on the grid {0..D}³, where D is the
+polynomial degree, decides it). False or malformed rows are listed with the
+row number and reason and skipped (`--strict` stops instead). The search uses
+the trained weights in `results/policy_weights.npz` (`--uniform` for the
+baseline). "Not proved" means the statement is true but the one-directional
+kernel rules didn't reach 0 within the node budget — e.g. nothing factors
+`a*b + a*c` back into `a*(b+c)`, and `a + a = 2*a` has no rule path at all.
+
+**Prototype B — find a formula for your own (x, y) data**
+
+```bash
+cd prototype_b_symbolic_regression
+python3 fit.py --file ../data/templates/regression_template.csv
+python3 fit.py --file assay.xlsx --sheet runs --x-col dose --y-col response
+python3 fit.py --file data.csv --iterations 40 --batch 80 --out results/fit.json      # or .csv
+python3 fit.py --demo sqrt_x       # a built-in synthetic target instead of a file
+```
+
+| Column | Required | Meaning |
+|--------|----------|---------|
+| `x` | yes | input values (rename with `--x-col`) |
+| `y` | yes | observed outputs (rename with `--y-col`) |
+| anything else | no | ignored (the template uses a `note` column to label sample rows) |
+
+Accepted files: `.csv`, `.tsv`, `.xlsx`, `.json` (rows `[{"x":..,"y":..}]` or
+columns `{"x":[..],"y":[..]}`). Every cell must be a finite number — bad cells
+are reported by row; rows with a blank x or y are dropped with a warning; at
+least 10 rows and 5 distinct x values are required; files over 2,000 rows are
+subsampled deterministically. x ≤ 0 is allowed but warned about (sqrt, 1/x
+are undefined there). The output is the Pareto front over (MSE, complexity),
+simplest first, with R². There is no ground truth for your data, so no
+"recovered" verdict — choose from the front.
+
+### Still out of scope
+
+- Prototype C (conjecture generation) is still planned, not built.
+- Proof search is limited to the kernel's 17 one-directional ring rules and
+  the variables `a, b, c`; Prototype B's grammar is single-variable (`x`) with
+  the operators listed in `grammar.py`.
+- No web UI; the CLIs and JSON/CSV outputs are the interface.
 
 ---
 

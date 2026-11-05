@@ -1,0 +1,6 @@
+id,statement,notes
+SAMPLE-1,a*(b+c) = a*b + a*c,SAMPLE ROW - left distributivity; replace with your own
+SAMPLE-2,(a+b)*c - (a*c + b*c),SAMPLE ROW - no '=' means prove statement = 0
+SAMPLE-3,a*b - b*a,SAMPLE ROW - commutativity of multiplication
+SAMPLE-4,-(-a) = a,SAMPLE ROW - double negation
+SAMPLE-5,(a*1 + 0)*(b + c) = a*b + a*c,SAMPLE ROW - identities then distributivity

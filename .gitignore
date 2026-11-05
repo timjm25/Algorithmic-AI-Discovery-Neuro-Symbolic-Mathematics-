@@ -7,3 +7,10 @@ dist/
 build/
 .DS_Store
 *.npz
+!prototype_a_proof_search/results/policy_weights.npz
+
+# Virtual environments and local outputs from prove.py / fit.py
+.venv/
+venv/
+.env
+*.db
